@@ -45,7 +45,7 @@ h5{
 	z-index: 2;
 	filter:blur(2px);
 	transform: translateZ(-100px);
-	margin-left: 2	0px;
+	margin-left: 20px;
 }
 .rotating-image-container[data-order="3"]{
 	z-index: 1;
