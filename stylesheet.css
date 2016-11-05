@@ -1,0 +1,63 @@
+@font-face{
+	font-family: "goodtimes";
+	src:url(goodtimes.ttf) format("truetype");
+}
+@font-face{
+	font-family: "libel";
+	src:url(libel-suit-rg.ttf) format("truetype");
+}
+h5{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "goodtimes";
+}
+.images-container{
+	width:50%;
+	height:600px;
+	margin: 0 auto;
+	position: relative;
+	-webkit-perspective: 350px;
+	perspective: 350px;
+	margin-top: 250px;
+}
+.rotating-image-container{
+	position: absolute;
+	width:200px;
+	background-position: center;
+	background-size:cover;
+	top:0;
+	left:0;
+	transition:transform linear 0.25s;
+	border:2px solid gainsboro;
+}
+.rotating-image-container>img{
+	width:100%;
+	height:auto;
+	display: block;
+}
+.rotating-image:hover{
+	z-index:5;
+}
+.rotating-image-container[data-order="1"]{
+	z-index: 4;
+}
+.rotating-image-container[data-order="2"]{
+	z-index: 2;
+	filter:blur(2px);
+	transform: translateZ(-100px);
+}
+.rotating-image-container[data-order="3"]{
+	z-index: 1;
+	transform: translateZ(-200px);
+	filter:blur(4px);
+}
+.image-description-container{
+	background-color: white;
+	padding:10px;	
+}
+.image-description-container .image-description{
+	font-family: "libel";
+}
+.image-description-container>h5{
+	margin-bottom: 5px;
+}
