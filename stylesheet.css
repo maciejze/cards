@@ -27,6 +27,7 @@ h5{
 	top:0;
 	left:0;
 	transition:transform linear 0.25s;
+	cursor: pointer;
 }
 .rotating-image-container>img{
 	width:100%;
@@ -50,7 +51,7 @@ h5{
 	filter:blur(4px);
 }
 .image-description-container{
-	background-color: rgba(255,255,255,0.9);
+	background-color: rgba(255,255,255,0.8);
 	padding:10px;	
 	border:2px solid gainsboro;
 	border-top:none;
