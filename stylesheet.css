@@ -10,6 +10,7 @@ h5{
 	margin-top: 0;
 	margin-bottom: 0;
 	font-family: "goodtimes";
+	font-size:20px;
 }
 .images-container{
 	width:50%;
@@ -23,12 +24,9 @@ h5{
 .rotating-image-container{
 	position: absolute;
 	width:200px;
-	background-position: center;
-	background-size:cover;
 	top:0;
 	left:0;
 	transition:transform linear 0.25s;
-	border:2px solid gainsboro;
 }
 .rotating-image-container>img{
 	width:100%;
@@ -52,8 +50,10 @@ h5{
 	filter:blur(4px);
 }
 .image-description-container{
-	background-color: white;
+	background-color: rgba(255,255,255,0.9);
 	padding:10px;	
+	border:2px solid gainsboro;
+	border-top:none;
 }
 .image-description-container .image-description{
 	font-family: "libel";
