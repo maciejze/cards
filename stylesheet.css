@@ -11,6 +11,7 @@ h5{
 	margin-bottom: 0;
 	font-family: "goodtimes";
 	font-size:20px;
+	letter-spacing: 1px;
 }
 .images-container{
 	width:50%;
@@ -23,10 +24,10 @@ h5{
 }
 .rotating-image-container{
 	position: absolute;
-	width:200px;
+	width:300px;
 	top:0;
 	left:0;
-	transition:transform linear 0.25s;
+	transition:all linear 0.25s;
 	cursor: pointer;
 }
 .rotating-image-container>img{
@@ -44,11 +45,13 @@ h5{
 	z-index: 2;
 	filter:blur(2px);
 	transform: translateZ(-100px);
+	margin-left: 2	0px;
 }
 .rotating-image-container[data-order="3"]{
 	z-index: 1;
 	transform: translateZ(-200px);
 	filter:blur(4px);
+	margin-left: 40px;
 }
 .image-description-container{
 	background-color: rgba(255,255,255,0.8);
@@ -58,6 +61,7 @@ h5{
 }
 .image-description-container .image-description{
 	font-family: "libel";
+	line-height: 1.5em;
 }
 .image-description-container>h5{
 	margin-bottom: 5px;
